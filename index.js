@@ -51,7 +51,6 @@ app.post("/FoodRestro" ,(req,res)=>{
              catch(err){
                 console.log(err);
                 res.send("catch");
-            // res.render("signinemail.ejs",{error:true,content:"Account does not exist"});
              }
     });
     const generateOTP = () => {
@@ -79,22 +78,15 @@ app.post("/FoodRestro" ,(req,res)=>{
     try{
         const message = await client.messages.create(msgOptions);
         console.log(message)
-        // res.render("verifyNo.ejs",{data:userInput_mobNo,error:false,content:""});
         res.render("verifyNo.ejs",{mobile:mobile_1});
     }catch(err){
         console.log(err)
     }
   }
 sendSMS(`${otp} One-Time-password for your Food Restro app ! Don't share with anyone`);
-        // console.log(req.body.username);
-        // res.send("user!")
-        // try{
-
-        // }
  })
 console.log(username_1)
 app.post('/newOtp',(req,res)=>{
-    // let {otp_value}=req.body;
     console.log(req.body);
     if(req.body.otp_value==otp){
                 try{
