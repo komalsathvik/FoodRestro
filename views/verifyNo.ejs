@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodRestro OTP Verification</title>
+  <link rel="stylesheet" href="/VerifyNo.css">
+  <link rel="icon" href="/images/food-app.png">
+</head>
+<body>
+  <div class="login-container">
+    <h2>OTP Verification</h2>
+    <p class="otp-instruction">Please enter the OTP sent to your registered mobile number.</p>
+    <form action="/newOtp" method="post">
+        <p><%=mobile%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Change</a></p>
+      <label for="otp">Enter OTP</label>
+      <input type="text" id="otp" name="otp_value" maxlength="6" required>
+      
+      <button type="submit">Verify OTP</button>
+    </form>
+    <p class="resend-link">Didn't receive the OTP? <a href="/resend-otp">Resend OTP</a></p>
+  </div>
+</body>
+</html>

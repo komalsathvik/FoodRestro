@@ -1,0 +1,125 @@
+.main {
+    height: 350px;
+    background-image: url("/images/top-view-snacks-corn-sticks-mini-brezel-hard-chuck-chocolate-cookies-paprika-chips-cracker-sticks-black-wooden-background_141793-7449.jpg");
+    background-size: auto;
+    width: 100%;
+    opacity: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(255, 254, 252);
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.nav .home {
+    margin-left: 0;
+}
+
+.nav .login {
+    margin-right: 0;
+}
+
+#text {
+    position: absolute;
+    top: 165px;
+    left: 300px;
+    width: 800px;
+    border-radius: 7px;
+    background-color: rgb(183, 176, 176);
+}
+
+#btn {
+    position: absolute;
+    top: 200px;
+    left: 940px;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: rgb(110, 108, 110);
+    opacity: 0.9;
+    border: none;
+    transition: transform 0.4s;
+    width: 100px;
+    height: 35px;
+}
+
+#btn:hover {
+    background-color: rgb(148, 144, 144);
+    color: rgb(58, 58, 60);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#img {
+    height: 18px;
+    width: 20px;
+    position: absolute;
+    top: 170px;
+    left: 1070px;
+}
+
+.container1, .container2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    width: 17rem;
+    border: 1px solid rgb(112, 111, 111);
+    border-radius: 3px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background-color: rgb(65, 58, 58);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding: right 100px;
+}
+
+.footer a:hover {
+    color: rgb(143, 211, 245);
+}

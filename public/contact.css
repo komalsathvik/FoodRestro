@@ -1,0 +1,38 @@
+#query{
+    font-size: larger;
+    height: 70px;
+    width:300px;
+}
+#form{
+    font-size: larger;
+    height:200px;
+    width:200px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.container{
+    margin-left:400px;
+    margin-top:100px;
+    height:500px;
+    width:700px;
+    border:5px solid black;
+}
+#email{
+    margin-top:20px;
+    font-size: larger;
+}
+#submit{
+    color:blue;
+    height:30px;
+    width:80px;
+    border-radius:5px;
+    margin-top:60px;
+    margin-left:200px;
+    background-color: white;
+    transition: ease-in-out;
+}
+#submit:hover{
+    background-color: green;
+    color:black;
+    transform: scale(1.1);
+}
